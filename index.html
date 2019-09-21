@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Set page title here-->
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/helper1.css">
+    <script src="./js/vendor/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="./js/vendor/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/landing.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="sm-hidden">
+        <nav class="navbar navbar-light bg-white static-top dell-header" style="padding: 0px 50px;">
+            <div class=" redirects dell-wrapper">
+                <a class="navbar-brand dell-logo" href="#">
+                    <img src="./assets/images/png/dell-logo.png" alt="dell-logo" />
+                </a>
+                <a class="navbar-brand redington-logo" href="#">
+                    <img src="./assets/images/png/redington-logo.png" alt="redington-logo" />
+                </a>
+
+            </div>
+        </nav>
+    </div>
+    <div class="sm-visible">
+        <nav class="navbar navbar-light bg-white static-top dell-header" style="padding: 0px 20px;">
+            <div class=" redirects dell-wrapper">
+                <div class="logos">
+                    <a class="navbar-brand redington-logo" href="#">
+                        <img src="./assets/images/png/redington-logo.png" alt="redington-logo" />
+                    </a>
+                    <a class="navbar-brand dell-logo" href="#" style="margin-left: 10px">
+                        <img src="./assets/images/png/dell-logo.png" alt="dell-logo" />
+                    </a>
+                </div>
+                <div class="request">
+                    <a href="#userFormModal" target="_blank" data-toggle="modal">Request a Demo</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class=" mask-group text-white">
+        <div class="dell-wrapper row align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="info col-md-4 ">
+                        <div class="percentage text-white ">
+                            <span>96%</span>
+                        </div>
+                        <div class="fact">
+                            <span>Organizations suffered loss of business opportunity due to data
+                                loss or unplanned downtime
+                            </span>
+                        </div>
+                        <div class="question">
+                            <div><span>Are you protected?</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 empty"></div>
+            <div class="cust-form col-md-3 sm-hidden">
+                <div class="heading">
+                    <span>
+                        Share your details for us to demonstrate how you can protect your data
+                    </span>
+                </div>
+                <form class="form-style"
+                    action='https://forms.zohopublic.com/redington/form/DP4400CustomerEngagement/formperma/ArYyaijlbwPIKXiSDvcYvX-w4bdx6St1lSbyFsHfEsw/htmlRecords/submit'
+                    name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                    <input type="hidden" name="zf_referrer_name" value="">
+                    <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                    <input type="hidden" name="zf_redirect_url" value="">
+                    <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                    <input type="hidden" name="zc_gad" value="">
+                    <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                    <input type="hidden" name="utm_source" value="" />
+                    <input type="hidden" name="utm_medium" value="" />
+                    <input type="hidden" name="utm_campaign" value="" />
+                    <input type="hidden" name="utm_term" value="" />
+                    <input type="hidden" name="utm_content" value="" />
+                    <input type="hidden" name="Campaign" value="" />
+                    <p></p>
+                    <!--Single Line-->
+                    <label>
+                        <input type="text" name="SingleLine" value="" fieldType=1 required maxlength="255" />
+                        <span>Full Name *
+                        </span>
+                    </label>
+                    <!--Phone-->
+                    <label>
+                        <input type="text" required compname="PhoneNumber" name="PhoneNumber_countrycode"
+                            phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11
+                            id="international_PhoneNumber_countrycode" />
+                        <span>Mobile Number*</span>
+                    </label>
+                    <!-- <label>Number</label> -->
+                    <!--Email-->
+                    <label>
+                        <input type="text" maxlength="255" name="Email" required value="" fieldType=9 />
+                        <span> Business E-mail ID* </span>
+                    </label>
+                    <!--Single Line-->
+                    <label>
+                        <input type="text" required name="SingleLine2" value="" fieldType=1 maxlength="255" />
+                        <span> Company Name* </span>
+
+                    </label>
+                    <!--Single Line-->
+                    <label>
+                        <input type="text" name="SingleLine1" required value="" fieldType=1 maxlength="255" />
+                        <span>City*</span>
+                    </label>
+                    <button type="submit" onClick="DemoFormSubmit()">Request a Demo</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="consensus-section">
+        <div class="container noPadding">
+            <div class="row outer">
+                <div class="col-12 col-md-2 offset-md-1 consensus-1">
+                    <!-- <div class="row justify-content-center"> -->
+                    <!-- <div class="col-sm-6 col-md-6 "> -->
+                    <div class="percentage">
+                        <span>76%</span>
+                    </div>
+                    <div class="fact">
+                        <span>Organizations suffered data disruptions in last 1 year.</span>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+                <div class="col-12 col-md-2 offset-md-2 consensus-2">
+                    <!-- <div class="row justify-content-center"> -->
+                    <!-- <div class="col-sm-6 col-md-6 "> -->
+                    <div class="percentage">
+                        <span>92%</span>
+                    </div>
+                    <div class="fact">
+                        <span>Organizations take more than 1 hour to recover data.</span>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+                <div class="col-12 col-md-2 offset-md-2 consensus-3">
+                    <!-- <div class="row justify-content-center"> -->
+                    <!-- <div class="col-sm-6 col-md-6"> -->
+                    <div class="percentage">
+                        <span>$1 mn</span>
+                    </div>
+                    <div class="fact">
+                        <span>Loss of company for every 2TB data.</span>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container info-section">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 offset-sm-1 section-1">
+                <div class="dyk-content-box">
+                    <!-- <div class="col-sm-1 col-md-1"> -->
+                    <img src="./assets/images/png/idea.png" />
+                    <!-- </div> -->
+                    <div class="">
+                        <div class="heading">
+                            <span>Did You Know?</span>
+                        </div>
+                        <div class="para-1">
+                            <span>
+                                Your business faces threat not just from an unsettled economy or rising
+                                competition! Your business can also suffer huge losses because of data loss
+                                or unplanned downtime!
+                            </span>
+                        </div>
+                        <div class="para-2">
+                            <span>
+                                In the last 1 year alone, 76% of organizations have suffered from data disruptions.
+                                For every 2TB of data loss these companies faced, led to loss of a whopping $1 million!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-md-4 offset-sm-2 section-2">
+                <div class="dyk-content-box">
+                    <!-- <div class="col-sm-1 col-md-1"> -->
+                    <img src="./assets/images/png/unlocked.png" />
+                    <!-- </div> -->
+                    <div class="">
+                        <div class="heading">
+                            <span>Data protection is no longer just a luxury, it’s a necessity! </span>
+                        </div>
+                        <div class="para-1">
+                            <span>
+                                With digital threats on the rise, there is a greater need for every organization to
+                                protect its data - as it fuels the growth of a business and creates avenues to monetize
+                                the data for company's benefit.
+                            </span>
+                        </div>
+                        <div class="para-2">
+                            <span>
+                                Dell EMC offers solutions that can help you protect & manage your data with capabilities
+                                to upscale anytime to complement your business growth.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container solution-section">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="heading">
+                    <span>Introducing Dell Data Protection Solution</span>
+                </div>
+                <div class="solution">
+                    <span>
+                        Get simply powerful data protection for small and mid-size organizations and remote and branch
+                        offices of larger enterprises with Integrated Data Protection Appliance (IDPA) DP4400 – a
+                        converged
+                        appliance that combines backup, replication, deduplication, search, analytics, instant access
+                        and restore,
+                        as well as DR and long-term retention to the Cloud.
+                    </span>
+                </div>
+                <div class="dell-video sm-hidden">
+                    <iframe width="855" height="481" src="https://www.youtube.com/embed/PouU3z6mrrY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="sm-hidden"></iframe>
+                </div>
+                <div class="dell-video sm-visible">
+                        <iframe width="855" height="240" src="https://www.youtube.com/embed/PouU3z6mrrY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="sm-hidden"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class=" detailed-solution-section">
+        <div class="container noPadding sm-hidden">
+            <div class="row sol-1 ">
+                <div class="col-sm-6 col-lg-6 col-md-6 offset-sm-1">
+                    <div class="heading">
+                        <span>Simple to deploy, manage, upgrade and grow</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Customer installable/upgradable 2U appliance that can grow in place from 8-24 or 24-96
+                            TB with no additional HW (simple non-disruptive field upgrade required to bridge from 24TB
+                            to larger capacities). Simplified management with IDPA System Manager.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>Watch IDPA DP4400 Deployment Video <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-lg-3  col-md-3 offset-sm-1 image text-right">
+                    <img src="./assets/images/png/sol-1.png" />
+                </div>
+            </div>
+            <div class="row sol-2 justify-content-center">
+                <div class="col-sm-3 col-lg-3 col-md-3 image text-left">
+                    <img src="./assets/images/png/sol-2.png" />
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6 offset-sm-1">
+                    <div class="heading">
+                        <span>Powerful app ecosystem, performance & cloud</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Supports largest application ecosystem. High performance with up to 2x faster backups
+                            and 55:1 avg dedupe. Efficient Cloud DR and long-term retention.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>Learn More About IDPA DP4400 <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row sol-3 justify-content-center">
+                <div class="col-sm-6 col-lg-6 col-md-6 ">
+                    <div class="heading">
+                        <span>At the lowest cost-to-protect</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Protects up to 4x more data in one 2U and costs up to 80% less to protect. 3-year
+                            satisfaction and up to 55:1 data protection deduplication guarantees.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>View IDPA DP4400 Infographics <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-lg-3 col-md-3  offset-sm-1 image text-right">
+                    <img src="./assets/images/png/sol-3.png" />
+                </div>
+            </div>
+            <div class="row solution-brief justify-content-center">
+                <a class="col-sm-4 col-md-4 brief-redirection" target="_blank" href="#userFormModal"
+                    data-toggle="modal">
+                    <span>Cloud-readiness Solution Brief for IDPA DP4400</span>
+                </a>
+            </div>
+        </div>
+        <div class="container sm-visible">
+            <div class="sol-1 ">
+                <div class="image">
+                    <img src="./assets/images/png/sol-1.png" />
+                </div>
+                <div class="content">
+                    <div class="heading">
+                        <span>Simple to deploy, manage, upgrade and grow</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Customer installable/upgradable 2U appliance that can grow in place from 8-24 or 24-96
+                            TB with no additional HW (simple non-disruptive field upgrade required to bridge from 24TB
+                            to larger capacities). Simplified management with IDPA System Manager.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>Watch IDPA DP4400 Deployment Video <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sol-2 justify-content-center">
+                <div class="image">
+                    <img src="./assets/images/png/sol-2.png" />
+                </div>
+                <div class="content">
+                    <div class="heading">
+                        <span>Powerful app ecosystem, performance & cloud</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Supports largest application ecosystem. High performance with up to 2x faster backups
+                            and 55:1 avg dedupe. Efficient Cloud DR and long-term retention.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>Learn More About IDPA DP4400 <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+            </div>
+            <div class="sol-3 justify-content-center">
+                <div class="image">
+                    <img src="./assets/images/png/sol-3.png" />
+                </div>
+                <div class="content">
+                    <div class="heading">
+                        <span>At the lowest cost-to-protect</span>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Protects up to 4x more data in one 2U and costs up to 80% less to protect. 3-year
+                            satisfaction and up to 55:1 data protection deduplication guarantees.
+                        </span>
+                    </div>
+                    <a class="link" href="#userFormModal" target="_blank" data-toggle="modal">
+                        <span>View IDPA DP4400 Infographics <img class="right-chev"
+                                src="./assets/images/png/chevron-right.svg" /></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="solution-brief justify-content-center">
+                <a class="brief-redirection" target="_blank" href="#userFormModal"
+                    data-toggle="modal">
+                    <span>Cloud-readiness Solution Brief for IDPA DP4400</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="key-features">
+        <div class="row align-items-center dell-wrapper">
+            <div class="col-12 col-md-6 image">
+                <img src="./assets/images/png/DellEMCx.png" />
+            </div>
+            <div class="col-12 col-md-6 features">
+                <div class="feature-container">
+                    <div class="heading">
+                        <span>Key Features of IDPA4400</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li>Comprehensive and complete data protection for the largest application ecosystem.</li>
+
+                        <li>Customer-installable/upgradable 2U appliance; can grow-in-place (8-96TB) with no additional
+                            hardware.<sup>1</sup></li>
+
+                        <li>High performance: Up to 2x shorter backups, avg. dedupe ratio of 55:1, faster restores, up
+                            to 98% less
+                            bandwidth.</li>
+
+                        <li>Expand to the cloud with native cloud DR and long-term retention add-on capabilities.</li>
+
+                        <li>3-year satisfaction guarantee and up to 55:1 data protection deduplication guarantee with
+                            Future-Proof
+                            Loyalty Program (support agreement required)</li>
+                    </ul>
+                    <div class="superscript">
+                        <sup>1</sup>
+                        <span>
+                            If starting out at less than 24TB, simple non-disruptive field upgrade, expected to be
+                            available in the
+                            second half of 2019, required to bridge from 24TB to larger capacities)
+                        </span>
+                    </div>
+                    <div class="links">
+                        <a target="_blank" href="#userFormModal" data-toggle="modal">IDPA4400 DATA SHEET <img
+                                class="right-chev" src="./assets/images/png/chevron-right.svg" /></a>
+                        <a target="_blank" href="#userFormModal" data-toggle="modal">IDPA4400 SPEC SHEET <img
+                                class="right-chev" src="./assets/images/png/chevron-right.svg" /></a>
+                        <a target="_blank" href="#userFormModal" data-toggle="modal">IDPA OVERVIEW <img
+                                class="right-chev" src="./assets/images/png/chevron-right.svg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="heading">
+                        <span>About Redington</span>
+                    </div>
+                    <p>
+                        Redington is one of the largest technology distributor providing end-to-end supply chain
+                        solutions
+                        for all categories of IT products (PCs, PC building blocks, networking, software and enterprise
+                        solution products) and Consumer and Lifestyle products (Telecom, Digital Lifestyle products,
+                        Entertainment products and Digital Printing Machines) to over 200 international brands and has
+                        relationship with major brands for years.
+                    </p>
+
+                    <p>With its corporate office in Chennai, it has 48 Sales locations across India. In addition,
+                        through
+                        its subsidiaries both in India and overseas, Redington has 81 Sales offices, 199 warehouses, 65+
+                        own
+                        service centers and 288+ partner centers. A team comprising of over 1500 highly skilled and
+                        committed professionals helps the Company deliver its products and services to every corner of
+                        the
+                        country.
+                    </p>
+
+                    <p>The team is supported by robust IT & Communication infrastructure connecting all the locations of
+                        the
+                        company and a state-of-the-art ERP and e-commerce back bone.
+                    </p>
+
+                    <p>Redington has built its business on very strong ethical and commercial fundamentals which has not
+                        only helped it to consistently exceed the industry growth rate but has also enabled to firmly
+                        establish it as the "partner of choice" with most of its vendors and business partners.
+                    </p>
+
+                    <p>Today the company is positioned as the largest Supply Chain Solution Provider in emerging
+                        markets. As
+                        a group, Redington is present in India, Middle East, Africa, Turkey, Sri Lanka, Bangladesh,
+                        Singapore and CIS countries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dell-wrapper request-demo-bottom-wrapper sm-hidden">
+        <div class="request-demo-bottom">
+            <button id="request-demo-button" data-toggle="modal" data-target="#bannerFormModal">
+                Request a Demo
+            </button>
+        </div>
+    </div>
+    <div class=" source-section " id="sourceAccordion">
+        <div class="heading-section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading  offset-md-1" data-toggle="collapse" data-target="#source">
+                        <span>Source</span>
+                        <span class="down-arrow"><img src="./assets/images/png/up-arrow.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content collapse" id="source" data-parent="#sourceAccordion">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10" style="word-break: break-all;">
+                        <a target="_blank"
+                            href="https://shop.dellemc.com/hi-in/Integrated-Data-Protection-Appliance-Products/Dell-EMC-Integrated-Data-Protection-Appliance-DP4400/p/Dell-EMC-Integrated-Data-Protection-Appliance-DP4400">
+                            https://shop.dellemc.com/hi-in/Integrated-Data-Protection-Appliance-Products/Dell-EMC-Integrated-Data-Protection-Appliance-DP4400/p/Dell-EMC-Integrated-Data-Protection-Appliance-DP4400
+                        </a>
+
+                        <a target="_blank"
+                            href="https://www.emc.com/video-collateral/demos/microsites/mediaplayer-video/what-is-dp4400.htm">
+                            https://www.emc.com/video-collateral/demos/microsites/mediaplayer-video/what-is-dp4400.htm
+                        </a>
+
+                        <a target="_blank"
+                            href="https://www.dellemc.com/content/dam/uwaem/production-design-assets/en/gdpi/assets/infographics/Dell_GDPI_2018_VB_key_findings_V3_1stFeb2019.pdf">
+                            https://www.dellemc.com/content/dam/uwaem/production-design-assets/en/gdpi/assets/infographics/Dell_GDPI_2018_VB_key_findings_V3_1stFeb2019.pdf
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" footer">
+        <div class="container noPadding">
+            <div class="row disclaimer">
+                <div class="col-md-7 offset-md-1">
+                    <span>
+                        Dell Technologies, Dell, EMC, Dell EMC and other trademarks are trademarks of Dell Inc. or its
+                        subsidiaries. Other trademarks may be trademarks of their respective owners.
+                    </span>
+                </div>
+                <div class="offset-md-1 col-md-2 links">
+
+                    <div class="page-links">
+                        <!-- <a href="#">Terms of Use</a>
+                            <a href="#">Privacy Policy</a> -->
+                    </div>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.linkedin.com/company/redingtonindia/" class="icon-1"><img
+                                src="./assets/images/png/in.png" /></a>
+                        <a target="_blank" href="https://redingtongroup.com/india/" class="icon-2"><img
+                                src="./assets/images/png/worldwide.png" /></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div id="userFormModal" class="user-form-modal modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <img src="assets/images/png/close-modal.png" class="close-modal" data-dismiss="modal" />
+                <div class="modal-body custom-body">
+                    <div class="heading">
+                        <span>
+                            Please fill up the below details
+                        </span>
+                    </div>
+                    <form class="form-style"
+                        action='https://forms.zohopublic.com/redington/form/DP4400eBookDownload/formperma/Nu53-FlkIgTLouO2FsprmbuhGWy04-l82wVRsc8anCI/htmlRecords/submit'
+                        name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" id="redirect-input" value="">
+                        <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad" value="">
+                        <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                        <input type="hidden" name="utm_source" value="" />
+                        <input type="hidden" name="utm_medium" value="" />
+                        <input type="hidden" name="utm_campaign" value="" />
+                        <input type="hidden" name="utm_term" value="" />
+                        <input type="hidden" name="utm_content" value="" />
+                        <input type="hidden" name="Campaign" value="" />
+                        <!-- <h2>DP4400 eBook Download</h2> -->
+                        <p></p>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" required name="SingleLine" value="" fieldType=1 maxlength="255" />
+                            <span>Name*</span>
+                        </label>
+                        <!--Phone-->
+                        <label>
+                            <input type="text" required compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11
+                                id="international_PhoneNumber_countrycode" />
+                            <span>Phone*</span>
+                        </label>
+                        <!-- <label>Number</label> -->
+                        <!--Email-->
+                        <label>
+                            <input type="text" required maxlength="255" name="Email" value="" fieldType=9 />
+                            <span>Business Email*</span>
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" required name="SingleLine2" value="" fieldType=1 maxlength="255" />
+                            <span>Company Name*</span>
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" required name="SingleLine1" value="" fieldType=1 maxlength="255" />
+                            <span>City*</span>
+                        </label>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bannerFormModal" class="user-form-modal modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <img src="assets/images/png/close-modal.png" class="close-modal" data-dismiss="modal" />
+                <div class="modal-body custom-body">
+                    <div class="heading">
+                        <span>
+                            Share your details for us to demonstrate how you can protect your data
+                        </span>
+                    </div>
+                    <form class="form-style"
+                        action='https://forms.zohopublic.com/redington/form/DP4400CustomerEngagement/formperma/ArYyaijlbwPIKXiSDvcYvX-w4bdx6St1lSbyFsHfEsw/htmlRecords/submit'
+                        name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" value="">
+                        <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad" value="">
+                        <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                        <input type="hidden" name="utm_source" value="" />
+                        <input type="hidden" name="utm_medium" value="" />
+                        <input type="hidden" name="utm_campaign" value="" />
+                        <input type="hidden" name="utm_term" value="" />
+                        <input type="hidden" name="utm_content" value="" />
+                        <input type="hidden" name="Campaign" value="" />
+                        <p></p>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" name="SingleLine" value="" fieldType=1 required maxlength="255" />
+                            <span>Full Name *
+                            </span>
+                        </label>
+                        <!--Phone-->
+                        <label>
+                            <input type="text" required compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11
+                                id="international_PhoneNumber_countrycode" />
+                            <span>Mobile Number*</span>
+                        </label>
+                        <!-- <label>Number</label> -->
+                        <!--Email-->
+                        <label>
+                            <input type="text" maxlength="255" name="Email" required value="" fieldType=9 />
+                            <span> Business E-mail ID* </span>
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" required name="SingleLine2" value="" fieldType=1 maxlength="255" />
+                            <span> Company Name* </span>
+
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" name="SingleLine1" required value="" fieldType=1 maxlength="255" />
+                            <span>City*</span>
+                        </label>
+                        <button type="submit" onClick="">Request a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
