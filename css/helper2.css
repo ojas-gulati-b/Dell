@@ -1,0 +1,179 @@
+.sm-visible {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sm-visible {
+    display: block;
+  }
+}
+.sm-hidden {
+  display: block;
+}
+@media (max-width: 768px) {
+  .sm-hidden {
+    display: none;
+  }
+}
+.container,
+.container-fluid {
+  min-width: 1024px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .container,
+  .container-fluid {
+    min-width: unset;
+  }
+}
+.dell-border {
+  border-bottom: 2px solid #f7f7f7;
+}
+body nav.navbar.dell-header .redirects .logos .navbar-brand img {
+  width: 90px;
+}
+body nav.navbar.dell-header .redirects .request a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: DIN;
+  color: #016938;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  body div.key-features .image {
+    position: static;
+    width: 100%;
+  }
+  body div.key-features .image img {
+    width: 100%;
+  }
+  body div.key-features .container {
+    padding: 0 20px;
+  }
+  body div.key-features .container .features .feature-container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body div.solution-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body div.solution-section .row-1 .section-1,
+  body div.solution-section .row-1 .section-2,
+  body div.solution-section .row-1 .section-3 {
+    margin-bottom: 40px;
+  }
+  body div.solution-section .row-1 .section-1 .description,
+  body div.solution-section .row-1 .section-2 .description,
+  body div.solution-section .row-1 .section-3 .description {
+    margin-bottom: 10px;
+  }
+  body div.solution-section .row-1 .section-1 .link,
+  body div.solution-section .row-1 .section-2 .link,
+  body div.solution-section .row-1 .section-3 .link {
+    text-align: left;
+  }
+  body div.solution-section .row-1 .section-1 .link a,
+  body div.solution-section .row-1 .section-2 .link a,
+  body div.solution-section .row-1 .section-3 .link a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #016938;
+    font-family: DIN;
+    text-decoration: none;
+  }
+  body div.solution-section .row-3.solution-brief {
+    margin: 0 auto 30px;
+  }
+}
+body .source-section {
+  background-color: #f7f7f7;
+  padding-left: 0;
+  min-width: 1024px;
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  body .source-section {
+    min-width: unset;
+  }
+}
+body .source-section .heading-section {
+  border-bottom: solid 1px #00953a;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body .source-section .heading-section .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: unset !important;
+  }
+}
+@media (max-width: 768px) {
+  body .source-section .heading-section .container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+body .source-section .heading-section .container .heading {
+  border: solid 1px #00953a;
+  border-bottom: solid 1px #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #00953a;
+  min-width: 90px;
+  font-family: DIN;
+  text-align: center;
+  padding: 4px 0px;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  bottom: calc(100% + -1px);
+}
+@media (max-width: 768px) {
+  body .source-section .heading-section .container .heading {
+    min-width: unset;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+body .source-section .content {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  body .source-section .content .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+body .footer {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #016938;
+  min-width: 1024px;
+}
+@media (max-width: 768px) {
+  body .footer {
+    min-width: unset;
+  }
+}
+body .footer .disclaimer {
+  font-family: "Arial";
+  font-size: 12px;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  body .footer .disclaimer {
+    padding: 0 20px;
+  }
+  body .footer .disclaimer > div {
+    padding-left: 10px;
+  }
+}
+body .footer .social-links {
+  margin-top: 10px;
+}

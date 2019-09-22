@@ -243,6 +243,9 @@ body .footer .disclaimer {
     padding: 0 20px;
   }
 }
+body .footer .social-links {
+  margin-top: 10px;
+}
 body div.about-section {
   padding-top: 3.75rem;
   min-width: 1024px;
@@ -295,5 +298,14 @@ body div.about-section .container p {
   }
   .user-form-modal .modal-dialog .modal-content {
     padding: 45px 20px 40px;
+  }
+  .user-form-modal .modal-dialog .modal-content .cancel {
+    font-size: 14px;
+    font-weight: 500;
+    color: #016938;
+    font-family: DIN;
+    margin-top: 40px;
+    text-align: center;
+    cursor: pointer;
   }
 }
