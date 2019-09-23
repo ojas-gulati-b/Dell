@@ -28,8 +28,17 @@
 .dell-border {
   border-bottom: 2px solid #f7f7f7;
 }
+body nav.navbar.dell-header .redirects .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 body nav.navbar.dell-header .redirects .logos .navbar-brand img {
   width: 90px;
+}
+body nav.navbar.dell-header .redirects .logos .navbar-brand:last-child {
+  margin-right: 0;
 }
 body nav.navbar.dell-header .redirects .request a {
   font-size: 18px;
@@ -37,6 +46,13 @@ body nav.navbar.dell-header .redirects .request a {
   font-family: DIN;
   color: #016938;
   text-decoration: none;
+}
+body div.key-features .container {
+  padding: 0 20px;
+}
+body div.key-features .container .features .thank-you.feature-container {
+  width: 80%;
+  margin-left: 20%;
 }
 @media (max-width: 768px) {
   body div.key-features .image {
@@ -49,8 +65,13 @@ body nav.navbar.dell-header .redirects .request a {
   body div.key-features .container {
     padding: 0 20px;
   }
-  body div.key-features .container .features .feature-container {
+  body div.key-features .container .features .thank-you.feature-container {
     width: 100%;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  body div.key-features .container .features .thank-you.feature-container {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -148,6 +169,7 @@ body .source-section .content {
   body .source-section .content .container {
     padding-left: 20px;
     padding-right: 20px;
+    word-break: break-all;
   }
 }
 body .footer {

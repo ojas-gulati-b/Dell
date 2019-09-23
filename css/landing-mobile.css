@@ -30,8 +30,17 @@ body nav.navbar.dell-header {
            width: 100vw !important
         } */
 }
+body nav.navbar.dell-header .redirects .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 body nav.navbar.dell-header .redirects .logos .navbar-brand img {
   width: 90px;
+}
+body nav.navbar.dell-header .redirects .logos .navbar-brand:last-child {
+  margin-right: 0;
 }
 body nav.navbar.dell-header .redirects .request a {
   font-size: 18px;
@@ -60,6 +69,38 @@ body div.mask-group > div.dell-wrapper {
     margin-top: 30px;
   }
 }
+body div.cust-form-mobile {
+  padding: 40px 20px;
+}
+body div.cust-form-mobile .form-content .custom-body .heading {
+  margin-bottom: 40px;
+  font-family: Arial;
+  font-size: 14px;
+  /* color: #656565; */
+}
+body div.cust-form-mobile .form-content .custom-body form input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #656565;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #656565;
+}
+body div.cust-form-mobile .form-content .custom-body form button {
+  padding: 1rem 0;
+  text-align: center;
+  font-family: "DIN";
+  font-size: 14px;
+  background-color: #016938;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+  font-style: normal;
+  margin-top: 20px;
+}
 @media (max-width: 768px) {
   body div.consensus-section {
     min-width: unset;
@@ -76,7 +117,15 @@ body div.mask-group > div.dell-wrapper {
 }
 @media (max-width: 768px) {
   body div.info-section {
-    padding: 60px 20px 40px;
+    padding: 40px 20px 40px;
+  }
+  body div.info-section .section-1 {
+    margin-bottom: 40px;
+  }
+  body div.info-section .section-1 .heading,
+  body div.info-section .section-2 .heading {
+    height: auto;
+    line-height: normal;
   }
 }
 body div.solution-section {
@@ -134,6 +183,7 @@ body div.key-features {
   body div.key-features {
     min-width: unset;
     padding: 0 20px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -158,9 +208,14 @@ body div.key-features .image img {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+  body .request-demo-bottom-wrapper .request-demo-bottom {
+    padding-right: 20px;
+  }
+}
 body .source-section {
   background-color: #f7f7f7;
-  padding-left: 0;
+  padding-left: 0px;
   min-width: 1024px;
   padding-right: 0;
 }
@@ -202,13 +257,12 @@ body .source-section .heading-section .container .heading {
   border-radius: 4px 4px 0 0;
   position: absolute;
   bottom: calc(100% + -1px);
+  margin-left: 20px;
 }
 @media (max-width: 768px) {
   body .source-section .heading-section .container .heading {
     min-width: unset;
-    width: 100%;
-    border-left: none;
-    border-right: none;
+    width: 30%;
   }
 }
 body .source-section .content {
@@ -220,6 +274,7 @@ body .source-section .content {
   body .source-section .content .container {
     padding-left: 20px;
     padding-right: 20px;
+    word-break: break-all;
   }
 }
 body .footer {

@@ -8,7 +8,7 @@
     <title>Page Title</title>
     <link rel="stylesheet" href="./css/vendor/bootstrap.css">
     <link rel="stylesheet" href="./css/landing.css">
-    <link rel="stylesheet" href="./css/helper1.css">
+    <link rel="stylesheet" href="./css/landing-mobile.css">
     <script src="./js/vendor/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="./js/vendor/bootstrap.min.js" type="text/javascript"></script>
     <script src="./js/landing.js" type="text/javascript"></script>
@@ -39,9 +39,9 @@
                         <img src="./assets/images/png/dell-logo.png" alt="dell-logo" />
                     </a>
                 </div>
-                <div class="request">
+               <!--  <div class="request">
                     <a href="#bannerFormModal" target="_blank" data-toggle="modal">Request a Demo</a>
-                </div>
+                </div> -->
             </div>
         </nav>
     </div>
@@ -123,9 +123,68 @@
                 </form>
             </div>
         </div>
-
-
     </div>
+
+    <div class="cust-form-mobile sm-visible">
+            <div class="form-content">
+                <div class="custom-body">
+                    <div class="heading">
+                        <span>
+                            Share your details for us to demonstrate how you can protect your data
+                        </span>
+                    </div>
+                    <form class="form-style"
+                        action='https://forms.zohopublic.com/redington/form/DP4400CustomerEngagement/formperma/ArYyaijlbwPIKXiSDvcYvX-w4bdx6St1lSbyFsHfEsw/htmlRecords/submit'
+                        name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" value="">
+                        <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad" value="">
+                        <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                        <input type="hidden" name="utm_source" value="" />
+                        <input type="hidden" name="utm_medium" value="" />
+                        <input type="hidden" name="utm_campaign" value="" />
+                        <input type="hidden" name="utm_term" value="" />
+                        <input type="hidden" name="utm_content" value="" />
+                        <input type="hidden" name="Campaign" value="" />
+                        <p></p>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" name="SingleLine" value="" fieldType=1 required maxlength="255" />
+                            <span>Full Name *
+                            </span>
+                        </label>
+                        <!--Phone-->
+                        <label>
+                            <input type="text" required compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11
+                                id="international_PhoneNumber_countrycode" />
+                            <span>Mobile Number*</span>
+                        </label>
+                        <!-- <label>Number</label> -->
+                        <!--Email-->
+                        <label>
+                            <input type="text" maxlength="255" name="Email" required value="" fieldType=9 />
+                            <span> Business E-mail ID* </span>
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" required name="SingleLine2" value="" fieldType=1 maxlength="255" />
+                            <span> Company Name* </span>
+
+                        </label>
+                        <!--Single Line-->
+                        <label>
+                            <input type="text" name="SingleLine1" required value="" fieldType=1 maxlength="255" />
+                            <span>City*</span>
+                        </label>
+                        <button type="submit" onClick="">Request a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     <div class="consensus-section">
         <div class="container noPadding">
             <div class="row outer">
@@ -493,6 +552,13 @@
     <div class="dell-wrapper request-demo-bottom-wrapper sm-hidden">
         <div class="request-demo-bottom">
             <button id="request-demo-button" data-toggle="modal" data-target="#bannerFormModal">
+                Request a Demo
+            </button>
+        </div>
+    </div>
+    <div class="dell-wrapper request-demo-bottom-wrapper sm-visible">
+        <div class="request-demo-bottom" >
+            <button id="request-demo-button" data-toggle="modal" data-target="#bannerFormModal" style="width: 30%;">
                 Request a Demo
             </button>
         </div>

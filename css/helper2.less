@@ -26,9 +26,17 @@ body{
     nav.navbar.dell-header{
         .redirects{
             .logos{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
                 .navbar-brand{
                     img{
                         width: 90px;
+                    }
+                    &:last-child{
+                        margin-right: 0;
                     }
                 }
             }
@@ -42,8 +50,17 @@ body{
                 }
             }
         }
-    }
+    } 
     div.key-features{
+        .container{
+            padding: 0 20px;
+            .features{
+                .thank-you.feature-container{
+                    width: 80%;
+                    margin-left: 20%;
+                }
+            }
+        }
         @media (max-width: 768px){
             .image{
                 position: static;
@@ -55,8 +72,11 @@ body{
             .container{
                 padding: 0 20px;
                 .features{
-                    .feature-container{
+                    .thank-you.feature-container{
                         width: 100%;
+                        @media (max-width: 768px){
+                            margin-left: 0;
+                        }
                     }
                 }
             }
@@ -149,6 +169,7 @@ body{
                 .container{
                     padding-left: 20px;
                     padding-right: 20px;
+                    word-break: break-all;
                 }
              }
           }
